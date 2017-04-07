@@ -28,6 +28,10 @@ class SerialClient:
             print('Serial port %s is opened' % port)
             self.ser = ser
 
+    def write(self, message):
+        self.ser.write(rawToBytes(message))
+        print('>>> %s' % self.ser.readlines())
+
     def interactive(self):
         while True:
             try:
