@@ -1,3 +1,3 @@
 # Serial Client
 
-A very simple serial client.
+A very simple wrapper of pySerial package/client.
